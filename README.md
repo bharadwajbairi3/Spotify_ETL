@@ -42,7 +42,7 @@ The ETL pipeline is built using AWS Glue Studio (Visual ETL) and performs the fo
 - Drops unnecessary or redundant fields
 - Outputs the cleaned data to S3 in Parquet format
 
-📄 Full description: [glue/etl_pipeline_description.md](./glue/etl_pipeline_description.md)
+📄 Full description: Glue/glue:etl_pipeline_description.md
 
 🖼️ Pipeline Diagram:  
 ![Spotify_ETL Visual Flow](./images/glue_pipeline_screenshot.png)
