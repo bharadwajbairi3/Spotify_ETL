@@ -46,6 +46,7 @@ The ETL pipeline is built using AWS Glue Studio (Visual ETL) and performs the fo
 
 🖼️ Pipeline Diagram:  
 [Architecture-diagram/Spotify.drawio.png](https://github.com/bharadwajbairi3/Spotify_ETL/blob/main/Architecture-diagram/Spotify.drawio.png)
+![Spotify drawio](https://github.com/user-attachments/assets/8d16b90e-a87e-482d-a85e-f1c5aa0e5c17)
 
 ---
 
