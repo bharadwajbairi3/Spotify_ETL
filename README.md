@@ -4,24 +4,6 @@ This project demonstrates a complete end-to-end ETL pipeline for processing musi
 
 ---
 
-## 🗺️ Project Architecture
-
-S3 (raw data)
-├── artist.csv
-├── albums.csv
-└── tracks.csv
-↓
-AWS Glue Visual ETL (joins, cleanup)
-↓
-S3 (cleaned output in Parquet)
-↓
-AWS Glue Crawler (create catalog)
-↓
-Athena (SQL queries)
-↓
-QuickSight (visual dashboards)
-
----
 
 ## 🧰 Tools & Services Used
 
@@ -54,13 +36,13 @@ The ETL pipeline is built using AWS Glue Studio (Visual ETL) and performs the fo
 
 Here are some of the queries used for data analysis:
 
-- Top 10 most popular tracks
-- Average duration by genre
-- Most prolific artists
-- Number of songs released per year
-- Longest and shortest tracks
+- Top 10 most popular Artists(Average Artist Popularity)
+- Average Track Popularity per Album
+- Most Common Genres
+- Average Track Popularity per Album
+- Full table
 
-📄 Full queries: [sql/athena_queries.sql](./sql/athena_queries.sql)
+📄 Full queries: Athena_SQL/athena_queries.sql
 
 ---
 
@@ -73,7 +55,7 @@ Amazon QuickSight was used to visualize:
 - Year-wise release counts
 - Track duration analysis
 
-🖼️ Dashboard previews: [quicksight/](./quicksight/dashboard_screenshots/)
+🖼️ Dashboard previews: quicksight/Count of Records by Followers and Genre.png
 
 ---
 
@@ -86,22 +68,7 @@ Amazon QuickSight was used to visualize:
 
 ---
 
-## 📁 Project Structure
-aws-etl-pipeline-project/
-├── glue/
-│ └── etl_pipeline_description.md
-├── sql/
-│ └── athena_queries.sql
-├── quicksight/
-│ └── dashboard_screenshots/
-├── images/
-│ └── glue_pipeline_screenshot.png
-├── data/
-│ ├── sample_input.csv
-│ └── sample_output.csv
-└── README.md
 
----
 
 ## 🧑‍💻 Author
 
